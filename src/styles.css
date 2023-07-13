@@ -1,0 +1,142 @@
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .heading-name {
+    font-size: 2.5em !important;
+    padding-left: 45px !important;
+  }
+  
+  .main-name {
+    color: #cd5ff8;
+  }
+  .backgroundimg{
+  
+   
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-color: #1c0f31;
+  }
+
+  .textStyle1{
+    flex: auto;
+    justify-content: center;
+    color: #e7f3f0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .textStyle2{
+    flex: auto;
+    justify-content: center;
+    color: #c4dbd6;
+    text-align: center;
+    font-size: 1.25em;
+  }
+  
+
+.home-about-social-links {
+  justify-content: center !important;
+  padding-top: 15px !important;
+  display: inline-block !important;
+  position: relative !important;
+  padding-inline-start: 0 !important;
+}
+
+
+.home-social-icons {
+  position: center !important;
+  display: inline-block !important;
+  width: 50px !important;
+  height: 54px !important;
+  text-align: center !important;
+  font-size: 3.2em !important;
+  line-height: 2em !important;
+  background: rgba(255, 255, 255, 0.972) !important;
+  border-radius: 50% !important;
+  transition: 0.5s !important;
+}
+
+.home-social-icons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #68187a;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.home-social-icons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #801f95;
+}
+
+.home-social-icons:hover {
+  color: #87209e;
+  box-shadow: 0 0 5px #87209e;
+  text-shadow: 0 0 2px #87209e;
+}
+
+.social-icons {
+  display: inline-block !important;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.tech-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+
+}
+
+
+ 
+
+
+  
+  
+    
