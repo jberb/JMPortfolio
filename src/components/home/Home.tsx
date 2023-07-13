@@ -16,7 +16,7 @@ import { SiFirebase, SiVercel,   SiVisualstudiocode, } from "react-icons/si";
 
 export default function Home() {
   return (
-    <div className='bg-top bg-bg-1 bg-no-repeat  h-screen' id="home">
+    <div className='bg-top backgroundimg bg-no-repeat  h-screen' id="home">
      
         
 <NavBar/>
