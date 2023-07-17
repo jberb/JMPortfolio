@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 function Type() {
   return (
-    <div className="textStyle1">
+    <div className="textStyle1 font-tektur ">
     <Typewriter 
       options={{
         strings: [
@@ -11,10 +11,12 @@ function Type() {
           "Programmer",
           "Pro Gamer",
           "Enthusiastic Fresh Graduate",
+          
         ],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
+        cursor:"🤸",
       }}
     />
     </div>

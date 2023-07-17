@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Tektur&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,4 +11,13 @@
 @font-face {
   font-family: 'Crimson-Text';
   src: url('./font/CrimsonText-Regular.ttf');
+}
+.glass{
+  /* From https://css.glass */
+background: rgba(92, 142, 205, 0.29);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.2px);
+-webkit-backdrop-filter: blur(5.2px);
+border: 1px solid rgba(92, 142, 205, 0.3);
 }
