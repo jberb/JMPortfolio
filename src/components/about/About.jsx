@@ -1,5 +1,5 @@
 import React from 'react'
-import img from "../../assets/jmab.jpg";
+import jmab from "../../assets/jmab.jpg";
 import Skills from '../home/Skills';
 
 export default function About() {
@@ -48,7 +48,7 @@ export default function About() {
         </p>
     </div>
       <div className='items-center flex justify-center sm:w-1/3  sm:py-1   '>
-      <img className='border-8 rounded-full   w-72 h-96  hover:animate-wave ' src={img} alt="" />
+      <img className='border-8 rounded-full   w-72 h-96  hover:animate-wave ' src={jmab} alt="" />
       </div>
         
 </div>
