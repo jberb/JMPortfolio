@@ -1,10 +1,27 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-import { FaBars, FaArrowRightFromBracket, FaUser } from "react-icons/fa6";
+import { FaBars, FaArrowRightFromBracket, FaUser, FaWrench } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
+
+
 
 export default function NavBar() {
   const [isSelected, setIsSelected] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      setIsScrolled(scrollTop < 1);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
 
   function menuClick() {
     setIsSelected(!isSelected);
@@ -26,8 +43,12 @@ export default function NavBar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+ 
+
   return (
-    <nav className="fixed items-center  glass px-10 sm:py-2 md:px-20 py-5 md:flex md:justify-between w-full z-20">
+    
+    <nav 
+    className={`fixed items-center bg-blue-900  px-10 sm:py-1 md:px-20 py-5 md:flex md:justify-between w-full z-20 ${isScrolled ? 'scrolled' : ' fixed items-center  glass px-10 sm:py-1 md:px-20 py-5 md:flex md:justify-between w-full z-20'}`}>
     <div className="flex justify-between">
       <h1 className="text-2xl font-bold font-body text-white -900 uppercase  hover:text-5xl  hover:text-yellow-300 duration-1000">
         {" "}
@@ -46,7 +67,7 @@ export default function NavBar() {
       )}
     </div>
     <ul
-      className={`flex flex-col  left-0 w-full gap-2  bg-transparent text-blue-900 z-20  ${
+      className={`flex flex-col  left-0 w-full gap-2  bg-transparent text-white z-20  ${
         isSelected
           ? "opacity-0 pl-14 pointer-events-none"
           : "opacity-100 pl-10 p-4"
@@ -60,7 +81,7 @@ export default function NavBar() {
           logo: FaUser,
         },
 
-        { text: "Project", url: "/Project", logo: FaHome },
+        { text: "Project", url: "/Project", logo: FaWrench },
    
       ].map((item, index) => (
         <li

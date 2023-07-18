@@ -7,18 +7,20 @@ import NavBar from './components/NavBar';
 import Footer from './Footer';
 import Project from './components/project/Project';
 
+
 function App() {
  
+  
 
   return (
  <BrowserRouter>
- <NavBar/>
- <Routes>
- <Route path="/" element={<Home/>} />
- <Route path="/About" element={<About />} />
- <Route path='/Project' element={<Project/>}/>
- </Routes>
-<Footer/>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Project" element={<Project />} />
+          </Routes>
+          <Footer />
  </BrowserRouter>
   )
 }

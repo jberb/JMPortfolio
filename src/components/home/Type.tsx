@@ -3,14 +3,15 @@ import Typewriter from "typewriter-effect";
 
 function Type() {
   return (
-    <div className="textStyle1 font-tektur ">
+    <div className=" font-tektur ">
     <Typewriter 
       options={{
         strings: [
           "Web Developer",
           "Programmer",
           "Pro Gamer",
-          "Enthusiastic Fresh Graduate",
+          "Motivated Graduate",
+          "Game Dev",
           
         ],
         autoStart: true,
